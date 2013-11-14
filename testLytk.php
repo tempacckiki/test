@@ -2,7 +2,6 @@
 
 
 <?php
-phpinfo();
 
 ?>
 <div class="p_4"><span style="font-weight: bold; text-decoration: underline; font-size: 13px;">{phrase var='profilepopup.notice'}: </span>{phrase var='profilepopup.global_settings_info'}</div>
@@ -39,6 +38,7 @@ Publisher.prototype.deliver = function(content){
   for(var i = 0; i < this.observers.length; i++){
 
   this.observers[i]. receive(content);
+  
 
   }
 }
@@ -95,6 +95,8 @@ NewYorkTimes.deliver('Here is your paper! Direct from the Big apple');
 AustinHerald.deliver('News');
 
 AustinHerald.deliver('Reviews');
+
+var var1 = 'test';
 
 AustinHerald.deliver('Coupons');
 
